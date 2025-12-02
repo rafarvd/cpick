@@ -112,7 +112,7 @@ const cpick = async () => {
       console.log("Botão não encontrado. Possivelmente já clicado.");
     }
 
-    await new Promise((r) => setTimeout(r, 2000));
+    await new Promise((r) => setTimeout(r, 5000));
 
     await page.reload({ waitUntil: "networkidle2" });
     await new Promise((r) => setTimeout(r, 5000));
